@@ -60,22 +60,22 @@ export default function Dashboard() {
           <h1>Dashboard</h1>
 
           <div className="stats-grid">
-            <StatCard
+            <Statcard
               title="Total Tasks"
               value={stats.totalTasks}
             />
 
-            <StatCard
+            <Statcard
               title="Completed"
               value={stats.completed}
             />
 
-            <StatCard
+            <Statcard
               title="Pending"
               value={stats.pending}
             />
 
-            <StatCard
+            <Statcard
               title="Overdue"
               value={stats.overdue}
             />
