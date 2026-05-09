@@ -1,0 +1,113 @@
+.projects-page {
+    flex: 1;
+    padding: 40px;
+    color: white;
+}
+
+.projects-header {
+    margin-bottom: 35px;
+}
+
+.projects-header h1 {
+    font-size: 42px;
+}
+
+.horizontal-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.horizontal-project-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border-radius: 24px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.left-project h2 {
+    margin-bottom: 12px;
+}
+
+.left-project p {
+    margin-bottom: 10px;
+    color: #cbd5e1;
+}
+
+.right-project {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+.right-project span {
+    background: linear-gradient(to right, #7c3aed, #2563eb);
+    padding: 10px 18px;
+    border-radius: 14px;
+}
+
+.project-form {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 24px;
+}
+
+.project-form h2 {
+    grid-column: span 2;
+}
+
+.project-form input,
+.project-form select {
+    padding: 16px;
+    border: none;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.project-form button {
+    padding: 16px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(to right, #7c3aed, #2563eb);
+    color: white;
+}
+
+.delete-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 14px;
+    background: crimson;
+    color: white;
+    cursor: pointer;
+}
+
+@media(max-width:768px) {
+    .horizontal-project-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .right-project {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .project-form {
+        grid-template-columns: 1fr;
+    }
+
+    .project-form h2 {
+        grid-column: span 1;
+    }
+}
