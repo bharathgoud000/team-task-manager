@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
-import "../styles/managetasks.css";
+import StatCard from "../components/StatCard";
+import "../styles/ManageTasks.css";
 
 export default function ManageTasks() {
   const [tasks, setTasks] = useState([]);

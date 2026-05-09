@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import StatCard from "../components/StatCard";
-import "../styles/dashboard.css";
+import "../styles/Dashboard.css";
 
 export default function Dashboard() {
   const [stats, setStats] = useState({

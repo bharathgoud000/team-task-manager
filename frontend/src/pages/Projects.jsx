@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
-import "../styles/projects.css";
+import "../styles/Projects.css";
 
 export default function Projects() {
   const user = JSON.parse(
